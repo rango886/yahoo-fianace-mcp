@@ -153,7 +153,7 @@ def get_earning_dates(symbol: str, limit: int = 12) -> str | Dict[str, Any]:
     except Exception as e:
         return _handle_tool_error("get_earning_dates", {"symbol": symbol, "limit": limit}, e)
 
-@mcp.tool()
+# @mcp.tool()
 def get_news(symbol: str) -> str | Dict[str, Any]:
     """Get recent news for a given stock symbol.
 
